@@ -10,7 +10,7 @@ The implementation prevents race conditions, deadlocks, and resource leaks.
 
 
 ## Folder Structure
-
+~~~
 /java
     Main.java
     Worker.java
@@ -19,7 +19,7 @@ The implementation prevents race conditions, deadlocks, and resource leaks.
 
 /go
     main.go
-
+~~~
 # Java Version
 ### How It Works
 - The shared `TaskQueue` uses a `ReentrantLock` + `Condition` for safe access.
@@ -32,19 +32,19 @@ The implementation prevents race conditions, deadlocks, and resource leaks.
 ## Running the Java Version
 
 ### Compile
-
+~~~
 cd java/src
 javac *.java
-
+~~~
 ### Run
-
+~~~
 java Main
-
+~~~
 
 ### Output File
-
+~~~
 java_output.txt
-
+~~~
 
 
 
@@ -59,34 +59,34 @@ java_output.txt
 
 
 ## Running the Go Version
-
+~~~
 cd go
 go run main.go
-
+~~~
 
 ### **Output File**
-
+~~~
 go_output.txt
+~~~
 
-
-# Sample Output (Console)
+## Sample Output
 
 ### Java
-
+~~~
 INFO: Worker 1 started
 INFO: Worker 2 started
 INFO: Worker 3 started
 INFO: Worker 4 started
 INFO: Worker 1 finished
-
+~~~
 
 ### Go
-
+~~~
 2025/02/10 Worker 1 started
 2025/02/10 Worker 2 started
 2025/02/10 Worker 3 started
 2025/02/10 Worker 4 started
 2025/02/10 Worker 3 finished
-
+~~~
 
 ---
