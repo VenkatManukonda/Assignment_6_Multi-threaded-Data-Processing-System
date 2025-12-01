@@ -2,9 +2,9 @@
 
 This repository contains a Data Processing System implemented in **Java** and **Go**, developed for an Advanced Programming Languages course. The project demonstrates safe concurrency, worker coordination, error handling, resource management, and logging using two different programming paradigms.
 
----
 
-## 📌 Project Overview
+
+##  Project Overview
 
 The system simulates multiple worker threads (or goroutines) processing tasks in parallel. Each worker:
 
@@ -15,18 +15,18 @@ The system simulates multiple worker threads (or goroutines) processing tasks in
 
 The implementation prevents race conditions, deadlocks, and resource leaks.
 
----
 
-## 🚀 Technologies Used
+
+## Technologies Used
 
 | Language | Concurrency Model | Mechanisms Used |
 |---------|-------------------|-----------------|
 | **Java** | Thread-based | `ExecutorService`, `ReentrantLock`, `Condition`, `try-catch` |
 | **Go**   | CSP model        | Goroutines, Channels, `sync.WaitGroup`, error returns |
 
----
 
-## 📂 Folder Structure
+
+## Folder Structure
 
 ```
 /java
@@ -39,9 +39,8 @@ The implementation prevents race conditions, deadlocks, and resource leaks.
     main.go
 ```
 
----
 
-# ☕ Java Version
+# Java Version
 
 ### How It Works
 - The shared `TaskQueue` uses a `ReentrantLock` + `Condition` for safe access.
@@ -52,7 +51,7 @@ The implementation prevents race conditions, deadlocks, and resource leaks.
 
 ---
 
-## ▶️ Running the Java Version
+## Running the Java Version
 
 ### **Compile**
 ```bash
@@ -72,7 +71,7 @@ java_output.txt
 
 ---
 
-# 🐹 Go Version
+# Go Version
 
 ### How It Works
 - A buffered channel acts as a concurrency-safe task queue.
@@ -83,7 +82,7 @@ java_output.txt
 
 ---
 
-## ▶️ Running the Go Version
+## Running the Go Version
 ```bash
 cd go
 go run main.go
@@ -96,7 +95,7 @@ go_output.txt
 
 ---
 
-# 📷 Sample Output (Console)
+# Sample Output (Console)
 
 ### Java
 ```
