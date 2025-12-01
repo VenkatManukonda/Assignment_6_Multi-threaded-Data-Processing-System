@@ -1,4 +1,4 @@
-## Project Overview
+## Overview
 The system simulates multiple worker threads (or goroutines) processing tasks in parallel. Each worker:
 
 - Retrieves tasks from a shared queue  
